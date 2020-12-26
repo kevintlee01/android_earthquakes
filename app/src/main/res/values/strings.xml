@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Earthquakes</string>
+    <string name="settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="east">East</string>
+    <string name="west">West</string>
+    <string name="magnitude">Magnitude Highlight</string>
+    <string name="validate">Validate</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="data_fragment_label">Data Fragment</string>
+    <string name="maps_fragment_label">Maps Fragment</string>
+    <string name="settings_fragment_label">Settings Fragment</string>
+</resources>

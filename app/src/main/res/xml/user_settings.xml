@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="@string/settings"
+        android:title="@string/settings"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            android:title="@string/username"
+            android:key="@string/username"
+            android:summary="Enter username"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            android:inputType="textFilter"
+            app:iconSpaceReserved="false">
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:title="@string/north"
+            android:key="@string/north"
+            android:summary="Value Between -90 to 90"
+            android:defaultValue="44.1"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789.,"
+            app:iconSpaceReserved="false">
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:title="@string/south"
+            android:key="@string/south"
+            android:summary="Value Between -90 to 90"
+            android:defaultValue="-9.9"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789.,"
+            app:iconSpaceReserved="false">
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:title="@string/east"
+            android:key="@string/east"
+            android:summary="Value Between -180 to 180"
+            android:defaultValue="-22.4"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789.,"
+            app:iconSpaceReserved="false">
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:title="@string/west"
+            android:key="@string/west"
+            android:summary="Value Between -180 to 180"
+            android:defaultValue="55.2"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:inputType="numberDecimal|numberSigned"
+            android:digits="0123456789.,"
+            app:iconSpaceReserved="false">
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:title="@string/magnitude"
+            android:key="@string/magnitude"
+            android:summary="Value Between 0-10"
+            android:defaultValue="8"
+            android:maxLines="1"
+            android:maxLength="8"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            app:iconSpaceReserved="false">
+        </EditTextPreference>
+
+        <Preference
+            android:key="@string/validate"
+            android:title="@string/validate"
+            app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
